@@ -1,0 +1,2 @@
+rootProject.name = 'rabbitmq-sender-test'
+include 'direct-test'
