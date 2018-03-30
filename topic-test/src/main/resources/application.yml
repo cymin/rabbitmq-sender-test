@@ -1,0 +1,7 @@
+#pvdm2:
+#  queues: data.acquisition.101
+pvdm2:
+  queues:
+    - data.acquisition.101
+    - data.acquisition.102
+    - data.acquisition.103

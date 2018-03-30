@@ -1,0 +1,32 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.3.RELEASE'
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+    repositories {
+        maven {
+            url 'http://maven.solarule.cn/artifactory/libs-release'
+        }
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+
+repositories {
+    maven {
+        url 'http://maven.solarule.cn/artifactory/libs-release'
+    }
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-starter-amqp')
+//    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+//    compile('com.alibaba:druid:1.0.27')
+//    runtime('mysql:mysql-connector-java')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+
